@@ -1,3 +1,121 @@
+<a id="guida-fork"></a>
+
+# Guida del fork — GiacomoGal/caveman
+
+Testo ordinario, per una persona. Non è voce da caverna. La skill di prodotto resta un artefatto: non è l'ordine di riscrivere questa guida.
+
+Questa pagina è la guida del checkout `GiacomoGal/caveman` sul ramo inventario `main`. Sotto, dopo la matrice, c'è il README di prodotto upstream, conservato. Lotto documentale t127u, sezione 3. Snapshot inventario locale del 7 novembre 2026. Nessuna verifica remota nuova: il remote locale non certifica il ref sul forge, la sincronizzazione, la canonicità né un uso vivo.
+
+Base git osservata prima di questa guida: `63e797cd753b301374947a5ed975c21775d962b9`. Lo SHA del commit che introduce la guida sta nel PR, non in questa frase.
+
+## Stato
+
+Identità di runtime e uso corrente restano **sconosciuti**. Il nome `caveman` non abbina questo repository a una VPS, a un servizio o a un owner di macchina. UNMAPPED esplicito. Nessun giudizio di inutilità. `nextdocscope=unresolved` è ambito di guida esplorativa: non attesta che il repository sia attivo, né che vada archiviato.
+
+| Campo | Valore usato qui | Rango |
+| --- | --- | --- |
+| URL nel mandato | https://github.com/GiacomoGal/caveman | Citato. Non riaperto via API. |
+| Origin locale | `github.com/GiacomoGal/caveman` | Path del remote di questo checkout. Credenziali non lette e non riportate. |
+| Ref inventario | `main` | Inventario. Non ricontrollato sul forge. |
+| Fork / archived | fork sì; archiviato no | Inventario. Parent sul forge non interrogato. |
+| Linguaggio inventario | non rilevato | Non dedotto dal tree. |
+| Descrizione inventario | «Claude Code skill that cuts 65% of tokens by talking like caveman» | Testo del mandato. Non è un risparmio misurato qui. |
+| identity_proven | false | Nessuna evidenza di identità nel brief (`identity_evidence` vuoto). |
+| Uso corrente | sconosciuto | `unknowncurrentuse=true`. |
+| Proposte, decisioni, ricevute | elenchi vuoti | Nessuna proposta `executed=false` da promuovere a esito. |
+| Autore nel testo upstream | Julius Brussee, `JuliusBrussee/caveman` | Copyright in `LICENSE` e URL già scritti nel tree. Non è un host e non è una VPS. |
+
+Nel tree, senza chiamata al forge, risultano citati `https://github.com/JuliusBrussee/caveman` (README, `plugins/caveman/.codex-plugin/plugin.json`) e l'autore Julius Brussee (`LICENSE`, manifest del plugin). I manifest pubblici sono stati letti solo per questa citazione e non sono stati modificati. Non provano il legame fork parent sul forge.
+
+## Come leggere il resto
+
+1. Questa prefazione e la matrice sono la guida di questo fork.
+2. Il corpo che inizia a [Testo upstream conservato](#testo-upstream-conservato) è il pitch di prodotto. La voce cavernicola lì è marca upstream, tenuta di proposito. Before/After resta il pitch, non la guida di inventario.
+3. I comandi in quel corpo (install, hook, eval, benchmark) sono procedure soggette a un mandato diverso. Qui non sono stati eseguiti.
+4. `AGENTS.md` e `CLAUDE.md` ripetono gli stessi limiti per gli agenti. Non sono una seconda matrice.
+5. `CONTRIBUTING.md` descrive ancora un flusso di PR verso il progetto upstream. Questo lotto non apre una PR upstream.
+
+## Cifre di token
+
+Nel pitch compaiono, tra le altre, «~75%», «~71%», «65%» di media, l'intervallo «22%–87%», «~3x», «accuratezza 100%» e «~46%» per il compress. Sono claim upstream, lasciati nel testo. Non sono un risparmio verificato in questo lotto.
+
+Controllo solo sui nomi dei file, senza aprirli e senza eseguirli:
+
+- `benchmarks/results/` contiene `.gitkeep`. Nessun JSON di risultati in quell'elenco.
+- `benchmarks/prompts.json` e `benchmarks/run.py` non sono stati aperti né eseguiti.
+- `evals/snapshots/results.json` è presente e non è stato aperto. `evals/` non è stato eseguito.
+- I manifest del plugin ripetono «~75%». Restano metadati di prodotto, non una misura.
+
+`CLAUDE.md` vieta di inventare o arrotondare i numeri di benchmark. Qui i numeri non sono ricalcolati e non sono certificati.
+
+## Cosa non fa questa guida
+
+- Non installa skill, non aggiorna skill globali, non tocca profili.
+- Non legge segreti, `.env`, `.env.local`, backup, memorie o dati privati. `CLAUDE.original.md` non è stato letto: è un backup del compress.
+- Non modifica codice, config, script, dati, media, lock, né i file di skill. `docs/index.html` non è stato letto né aggiornato.
+- Non apre path host citati nel prodotto: `~/.claude/.caveman-active`, `~/.claude/settings.json`, `~/.claude/hooks/`, `~/.config/caveman/config.json`. Non legge `ANTHROPIC_API_KEY` né `CAVEMAN_DEFAULT_MODE`.
+- Non fa runtime, import applicativo, test dell'app, chiamata a provider o API, SSH, sync, merge, deploy, archive.
+- Non inferisce identità o uso dal nome.
+- Non dichiara PASS. Review indipendente, distinta da «integrato» o «funzionante».
+
+<a id="matrice"></a>
+
+## Matrice precedente → nuovo
+
+Base delle righe: `63e797cd753b301374947a5ed975c21775d962b9`. «Riga» è il file prima di questa guida. Il rango nuovo non cancella l'obbligo: ne dice quando vale.
+
+| ID | Precedente (fonte:riga) | Nuovo | Destinatario | Rango | Condizioni | Destinazione |
+| --- | --- | --- | --- | --- | --- | --- |
+| M1 | Assente nel repo. Brief, perimetro L3–L11 e §3 L39–L51 | Prefazione di stato unresolved / uso ignoto | Persone e agenti | Perimetro del lotto. Non è decisione di lifecycle | Snapshot locale 7 nov 2026. Nessuna verifica remota | Questa sezione |
+| M2 | Assente. Brief §3, UNMAPPED | Divieto di dedurre VPS, servizio o owner dal nome | Persone e agenti | Limite | Nessun abbinamento per nome; nessun giudizio di inutilità | README, `AGENTS.md`, `CLAUDE.md` |
+| M3 | `README.md` L1–L403, pitch intero | Stesso testo, più due note «Fork note» su cifre e «prove» | Lettori del prodotto | Istruzione upstream. Voce del pitch intenzionale | Comandi non eseguiti. Cifre non certificate qui | Sotto «Testo upstream conservato» |
+| M4 | Claim in `README.md` L28, L69, L110–L120, L349–L368, L372, L378; `CLAUDE.md` L22; descrizione skill e manifest «~75%»; compress «~46%» / «~65%» | Numeri lasciati. Rango: claim upstream, non risparmio verificato | Lettori | Claim. Il numero resta citato | Elenco file sopra. Nessun run, nessun JSON aperto | Note nel pitch e frase in `CLAUDE.md` |
+| M5 | Procedure `README.md` L123–L283, hook L174–L185, Gemini L213–L216, eval L382–L387; `hooks/README.md`; `evals/README.md` | Stesse procedure, non eseguite | Chi installa, sotto altro mandato | Testo procedurale upstream | Soggette a mandato. Non lanciate da questa guida. Tabelle install non riaudite sul codice | Pitch README invariato tranne le due note. `hooks/README.md` e `evals/README.md` non modificati |
+| M6 | Snippet always-on `README.md` L264–L273 | Resta nel pitch. Non è lo stile di questa prefazione | Utenti senza hook, altrove | Snippet opzionale di prodotto | Non promosso a stile universale di sessione | Corpo upstream |
+| M7 | `AGENTS.md` L1–L4, quattro righe `@` verso le skill | Percorsi tenuti. Niente `@`. Trigger nel frontmatter di ogni skill | Agenti che leggono `AGENTS.md` | Mappa di ingresso | La skill vale se invocata, o se una copia always-on già nel tree inietta il corpo breve. Non per riscrivere le guide | `AGENTS.md` |
+| M8 | `GEMINI.md` L1–L4, stessi `@` | Invariato | Gemini CLI | Meccanismo upstream lasciato | Non è ordine di stile per queste guide | File non modificato |
+| M9 | `rules/caveman-activate.md` L1–L15 e copie `.cursor/rules/caveman.mdc` (`alwaysApply`), `.windsurf/rules/caveman.md` (`always_on`), `.clinerules/caveman.md`, `.github/copilot-instructions.md` | File non modificati. Documentati come iniettori già presenti | Quegli agenti | Regola di prodotto generata, non guida documentale | CI le rigenera dalla sorgente. Editarle qui le farebbe perdere o toccherebbe config | Invariati |
+| M10 | `skills/caveman/SKILL.md`, commit, review, help; `caveman-compress/SKILL.md`; copie in `skills/compress`, `compress/`, `plugins/`, `.cursor/skills`, `.windsurf/skills`, `caveman/` | Byte invariati | Runtime della skill, quando scatta | Artefatto. Non ordine di riscrittura guide | Trigger nel frontmatter. Confini interni: codice, commit e PR in prosa normale; stop con «stop caveman» o «normal mode»; commit non lancia git; review non approva; compress non tocca codice, config, env, lock, html e non comprime `*.original.md` | Path invariati |
+| M11 | `CLAUDE.md` L1–L199 | Corpo upstream tenuto. Blocco fork in cima. Tre precisazioni: voce, cifra, riga Copilot | Agenti che modificano il repo | Obblighi vigenti | Vedi tabella annidata | `CLAUDE.md` |
+| M12 | `CONTRIBUTING.md` L1–L21 | Invariato | Contributor del progetto upstream | Flusso PR descritto lì | Questa guida non apre PR upstream. Link issue non verificato in rete | File non modificato |
+| M13 | `.github/ISSUE_TEMPLATE/bug_report.md`, `feature_request.md` | Invariati | Chi apre issue | Moduli. Non norme di sessione | Non promossi a stile o a roadmap eseguita | File non modificati |
+| M14 | `skills/caveman-help/SKILL.md` L39–L59, env e `~/.config/caveman/config.json` | Invariato | Chi invoca `/caveman-help` | Artefatto one-shot | Path e env non aperti. URL upstream non richiesto in rete | File non modificato |
+| M15 | `caveman-compress/SECURITY.md` | Invariato | Lettori del compress | Nota di sicurezza del file | Claim Snyk e «false positive» non riverificati | File non modificato |
+| M16 | `hooks/README.md`, path `~/.claude/` | Invariato | Chi installa hook, sotto mandato | Procedura upstream | Path non aperti. Script non eseguiti | File non modificato |
+| M17 | `evals/README.md` L70–L84: niente fedeltà, costo, significatività; tokenizer approssimato | Invariato | Chi legge le eval | Limite di misura già scritto | Snapshot non usato come prova | File non modificato |
+| M18 | `LICENSE` L1–L21, MIT, copyright Julius Brussee 2026 | Invariato | Destinatari della licenza | Licenza | Non è identità di VPS | File non modificato |
+| M19 | `docs/index.html`, `docs/.nojekyll` | Non letti, non modificati | Pagine GitHub, se pubblicate | Fuori dalle guide Markdown | Possibile deriva rispetto a questo README. Non allineata di proposito | Invariati |
+| M20 | `commands/*.toml`, `.codex/hooks.json`, workflow, `FUNDING.yml` | Non aperti, non modificati | Secondo il file, non secondo questa guida | Config o prompt non promossi | Non letti, per non elevare prompt o config a norma | Invariati |
+| M21 | Path host e segreti citati in M14, M16 e in `CLAUDE.md` sui benchmark (`.env.local`) | Restano citazioni chiuse | Nessuno in questo lotto | Divieto di lettura | Non aperti | Nessuna destinazione nuova |
+| M22 | URL upstream nel pitch e origin `GiacomoGal/caveman` | Separazione tenuta | Lettori | Fatto di checkout, non parent forge provato | Niente API. Inventario: fork sì | Prefazione |
+| M23 | Brief: `proposalOct`, `decisionlater`, `executionreceipt` vuoti | Nessuna archiviazione, nessuna riattivazione | Review | unresolved resta unresolved | Una proposta non eseguita non è un esito. Qui non c'è neppure la proposta | Prefazione |
+
+### Clausole annidate di `CLAUDE.md` (M11)
+
+| ID | Precedente (fonte:riga) | Nuovo | Destinatario | Rango | Condizioni | Destinazione |
+| --- | --- | --- | --- | --- | --- | --- |
+| M11a | Regole README L5–L16: leggibile, Before/After, tabella install, tabella funzioni, voce, numeri reali, blocco dettagli, prova dei 60 secondi | Tengono per il pitch. La prefazione resta in prosa ordinaria e sta prima del pitch | Chi edita il README | Obbligo upstream, con eccezione esplicita | Non normalizzare il pitch. Non cavernizzare la prefazione | `CLAUDE.md` |
+| M11b | Sorgenti uniche L29–L37; copie sync L41–L53 | Invariato come regola. Questo lotto non edita quelle sorgenti né le copie | Chi cambia comportamento | Obbligo | Una modifica di comportamento non si fa in questa guida | Corpo `CLAUDE.md` |
+| M11c | CI `.github/workflows/sync-skill.yml` L57–L67 | Descrizione tenuta. Workflow non aperto e non lanciato | Chi fa merge a main upstream | Descrizione di config | Config non letta. Nessun sync | Corpo `CLAUDE.md` |
+| M11d | Hook L71–L122, fail silenzioso, flag `~/.claude/.caveman-active` | Descrizione tenuta. Path non aperti. Script non eseguiti | Chi tocca gli hook, sotto mandato | Obbligo di non bloccare la sessione | Vale sul codice hook, non modificato qui | Corpo `CLAUDE.md` |
+| M11e | Livelli, auto-clarity, compress, commit, review L126–L145 | Restano definiti nei file skill | Chi edita una skill | Obbligo nel file skill | File non riscritti | Rinvio, non copia del prompt |
+| M11f | Tabella agenti L150–L163, frase Copilot via `AGENTS.md` | Tabella tenuta. Nota: `AGENTS.md` non importa più le skill per `@`. Il testo breve Copilot resta in `.github/copilot-instructions.md` | Agenti del repo | Obbligo corretto, non ristretto in silenzio | Conflitto esplicito col vecchio `@` | Nota nel corpo `CLAUDE.md` |
+| M11g | Eval: delta onesto skill contro terse, non contro baseline L167–L180 | Tenuto | Chi rigenera gli snapshot | Obbligo di misura | Non eseguito. JSON non aperto | Corpo `CLAUDE.md` |
+| M11h | Benchmark L184–L188, `ANTHROPIC_API_KEY` in `.env.local` | Procedura tenuta, non eseguita. Env non letto | Chi riproduce, sotto mandato | Procedura | Segreto non aperto | Corpo `CLAUDE.md` |
+| M11i | Regole finali L192–L199 | Tenute, sotto i limiti del fork | Agenti | Obbligo | Non autorizzano a cancellare la prefazione né a inventare un risparmio | Corpo `CLAUDE.md` più blocco fork |
+
+Conflitto esplicito, risolto senza spegnere gli iniettori: in questo workspace Cursor la copia `.cursor/rules/caveman.mdc` può ancora imporre il corpo breve a ogni turno. Questa guida non la modifica. Il testo nuovo della prefazione, di `AGENTS.md` e del blocco fork è comunque prosa ordinaria, perché il mandato vieta di trattare la skill come ordine di riscrittura.
+
+## Limiti del controllo link
+
+Nessuna richiesta HTTP. Nessuna API. Controllo statico sui tre file di questa guida, dopo gli inserimenti: ogni link relativo visibile (fuori dai blocchi di codice) punta a un file presente nel checkout. Ancore esplicite di questa prefazione: `guida-fork`, `matrice`, `testo-upstream-conservato`. I link esterni del pitch non sono stati contattati; la sintassi è quella upstream. Il link issue in `CONTRIBUTING.md` non è stato risolto in rete. Le tabelle di install non sono state riaudite contro il codice.
+
+<a id="testo-upstream-conservato"></a>
+
+## Testo upstream conservato
+
+Il corpo che segue è il README di prodotto com'era sulla base `63e797cd753b301374947a5ed975c21775d962b9`, con due soli inserimenti: le citazioni «Fork note» accanto alla tabella benchmark e accanto alla frase «prove». Il resto di quel corpo non è stato riscritto.
+
 <p align="center">
   <img src="https://em-content.zobj.net/source/apple/391/rock_1faa8.png" width="120" />
 </p>
@@ -366,6 +484,8 @@ Real token counts from the Claude API ([reproduce it yourself](benchmarks/)):
 | **Average** | **1214** | **294** | **65%** |
 
 *Range: 22%–87% savings across prompts.*
+
+> **Fork note (not a new measurement).** The percentages in the table above are upstream wording kept verbatim. In this checkout, `benchmarks/results/` contains `.gitkeep` only (filename listing). Result JSON was not opened and `benchmarks/run.py` was not run. This documentary lot does not certify the "65%" average, the 22%–87% range, or any other token saving.
 <!-- BENCHMARK-TABLE-END -->
 
 > [!IMPORTANT]
@@ -376,6 +496,8 @@ A March 2026 paper ["Brevity Constraints Reverse Performance Hierarchies in Lang
 ## Evals
 
 Caveman not just claim 75%. Caveman **prove** it.
+
+> **Fork note.** The word "prove" above is upstream wording. This lot did not run `evals/`. `evals/snapshots/results.json` is present and was not opened. The sentence is not a certified result for this fork.
 
 The `evals/` directory has a three-arm eval harness that measures real token compression against a proper control — not just "verbose vs skill" but "terse vs skill". Because comparing caveman to verbose Claude conflate the skill with generic terseness. That cheating. Caveman not cheat.
 
