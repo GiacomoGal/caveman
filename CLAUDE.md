@@ -1,5 +1,24 @@
 # CLAUDE.md — caveman
 
+## Fork checkout (GiacomoGal/caveman)
+
+This section is the fork entry. Ordinary language. It does not replace the upstream rules below.
+
+Read [the human preface and the matrix](README.md#matrice) before editing. `AGENTS.md` is the short agent entry and points here. Do not keep a second, divergent matrix.
+
+- Inventory for this lot: fork, not archived, ref `main`, `nextdocscope=unresolved`, identity not proven, current use unknown. UNMAPPED: do not infer a VPS, a service, or an owner from the name `caveman`.
+- Local origin path is `github.com/GiacomoGal/caveman`. In-tree text names `JuliusBrussee/caveman` and Julius Brussee. That is upstream authorship and a cited URL, not a proven forge parent and not a host. No API call was made.
+- Base before this guide: `63e797cd753b301374947a5ed975c21775d962b9`.
+- Skill files are artifacts. Do not rewrite README, AGENTS.md, or this fork section in caveman because those files exist. Apply a skill when its own frontmatter trigger fires, or where an always-on copy already in the tree injects `rules/caveman-activate.md`. This lot does not edit those copies (`.cursor/rules/caveman.mdc`, `.windsurf/rules/caveman.md`, `.clinerules/caveman.md`, `.github/copilot-instructions.md`) and does not edit `GEMINI.md`, which still `@`-includes the skills.
+- Upstream percentages ("65%", "~75%", "~46%", and the rest in the product README) are claims. They are not a saving verified here. Do not invent, round, or re-certify them. `benchmarks/results/` lists `.gitkeep` only; result JSON was not opened; `benchmarks/run.py` was not run. `evals/snapshots/results.json` was not opened.
+- Do not read secrets, env, backups, memories, or private data. Do not open host paths cited below (`~/.claude/`, `~/.config/caveman/`, `.env.local`). `CLAUDE.original.md` was not read.
+- Do not install skills, run hooks, evals, benchmarks, providers, APIs, SSH, sync, merge, deploy, or archive as part of reading this file.
+- Do not open an upstream pull request from this documentary lot.
+- Commands in the product README are procedures under a separate mandate. Do not run them from this guide.
+- This file is not a PASS and not a statement that the product works.
+
+The rules under the next headings stay in force for product work. Where the product pitch says a saving is proven, the matrix rank wins: upstream claim, not a result of this checkout.
+
 ## README is a product artifact
 
 README = product front door. Non-technical people read it to decide if caveman worth install. Treat like UI copy.
@@ -7,11 +26,11 @@ README = product front door. Non-technical people read it to decide if caveman w
 **Rules for any README change:**
 
 - Readable by non-AI-agent users. If you write "SessionStart hook injects system context," invisible to most — translate it.
-- Keep Before/After examples first. That the pitch.
+- Keep Before/After examples first inside the upstream pitch. That the pitch. The fork preface stands above that pitch and is not part of it.
 - Install table always complete + accurate. One broken install command costs real user.
 - What You Get table must sync with actual code. Feature ships or removed → update table.
-- Preserve voice. Caveman speak in README on purpose. "Brain still big." "Cost go down forever." "One rock. That it." — intentional brand. Don't normalize.
-- Benchmark numbers from real runs in `benchmarks/` and `evals/`. Never invent or round. Re-run if doubt.
+- Preserve voice in the upstream product pitch. Caveman speak there on purpose. "Brain still big." "Cost go down forever." "One rock. That it." — intentional brand. Don't normalize that pitch. The fork preface above the pitch, and the two Fork notes on unverified savings, stay in ordinary language. Do not rewrite those notes into caveman, and do not treat `skills/caveman/SKILL.md` as an order to do so.
+- Benchmark numbers from real runs in `benchmarks/` and `evals/`. Never invent or round. Re-run only under a mandate that allows that API call. This documentary reading does not re-run them and does not certify the published percentages.
 - Adding new agent to install table → add detail block in `<details>` section below.
 - Readability check before any README commit: would non-programmer understand + install within 60 seconds?
 
@@ -19,7 +38,7 @@ README = product front door. Non-technical people read it to decide if caveman w
 
 ## Project overview
 
-Caveman makes AI coding agents respond in compressed caveman-style prose — cuts ~65-75% output tokens, full technical accuracy. Ships as Claude Code plugin, Codex plugin, Gemini CLI extension, agent rule files for Cursor, Windsurf, Cline, Copilot, 40+ others via `npx skills`.
+Upstream product description, not a saving measured in this fork: Caveman makes AI coding agents respond in compressed caveman-style prose. Upstream text says that cuts ~65-75% of output tokens and keeps full technical accuracy. This checkout does not certify that figure. Ships as Claude Code plugin, Codex plugin, Gemini CLI extension, agent rule files for Cursor, Windsurf, Cline, Copilot, 40+ others via `npx skills`.
 
 ---
 
@@ -160,7 +179,9 @@ How caveman reaches each agent type:
 | Copilot | `.github/copilot-instructions.md` + `AGENTS.md` | Yes — repo-wide instructions |
 | Others | `npx skills add JuliusBrussee/caveman` | No — user must say `/caveman` each session |
 
-For agents without hook systems, minimal always-on snippet lives in README under "Want it always on?" — keep current with `rules/caveman-activate.md`.
+Fork note on the Copilot row: `AGENTS.md` in this checkout no longer `@`-includes skill prompts. The short always-on text for Copilot remains `.github/copilot-instructions.md`, which this lot did not edit. Full skill text applies when that skill's own trigger fires. `GEMINI.md` still `@`-includes the four skills; that file was left as upstream wrote it.
+
+For agents without hook systems, minimal always-on snippet lives in README under "Want it always on?" — keep current with `rules/caveman-activate.md`. That snippet is product text for other agents. It is not the style of the fork preface.
 
 ---
 
@@ -193,7 +214,8 @@ To reproduce: `uv run python benchmarks/run.py` (needs `ANTHROPIC_API_KEY` in `.
 
 - Edit `skills/caveman/SKILL.md` for behavior changes. Never edit synced copies.
 - Edit `rules/caveman-activate.md` for auto-activation rule changes. Never edit agent-specific rule copies.
-- README most important file for user-facing impact. Optimize for non-technical readers. Preserve caveman voice.
+- README most important file for user-facing impact. Optimize for non-technical readers. Preserve caveman voice in the upstream pitch. The fork preface stays ordinary language.
 - Benchmark and eval numbers must be real. Never fabricate or estimate.
 - CI workflow commits back to main after merge. Account for when checking branch state.
 - Hook files must silent-fail on all filesystem errors. Never let hook crash block session start.
+- Fork limits at the top of this file outrank a reading of these bullets that would delete the preface, certify a token saving, infer a host from the name, or open an upstream pull request from this lot.
